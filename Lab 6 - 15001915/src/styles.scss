@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+input[type="number"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+.card {
+    // Estilo básico del contenedor de la tarjeta
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #d1e2f3;
+    transition: box-shadow 0.3s ease;
+  
+    // Estilo cuando el cursor está sobre la tarjeta
+    &:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+  
+    // Estilo de título dentro de la tarjeta
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    // Estilo del contenido dentro de la tarjeta
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    // Estilo de un enlace dentro de la tarjeta
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+  
+    // Estilo de una imagen dentro de la tarjeta
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .toolbar {
+    background-color: #1976d2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .toolbar nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .toolbar nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .outlet {
+    padding: 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resultado {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .resultado p {
+    font-size: 2rem;
+    margin: 0;
+  }

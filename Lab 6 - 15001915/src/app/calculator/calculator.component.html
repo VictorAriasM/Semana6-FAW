@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="operando">
+        <label for="num1">Operando 1</label>
+        <input type="number" name="num1" id="num1" [(ngModel)]="num1">
+    </div>
+    <div class="operando">
+        <label for="num2">Operando 2</label>
+        <input type="number" name="num2" id="num2" [(ngModel)]="num2">
+    </div>
+
+    <div class="resultado">
+        <label for="res">Resultado</label>
+        <p>{{ result }}</p>
+    </div>
+
+    <div class="operacion">
+        <button (click)="add()">SUMA</button>
+        <button (click)="subtract()">RESTA</button>
+        <button (click)="multiply()">MULTI</button>
+        <button (click)="divide()">DIVI</button>
+        <button (click)="power()">POTE</button>
+    </div>
+</div>

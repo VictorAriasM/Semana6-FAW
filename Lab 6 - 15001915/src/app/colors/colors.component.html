@@ -1,0 +1,23 @@
+<div class="card">
+    <div>
+        <label for="rojo"></label>
+        <input type="number" name="rojo" id="rojo" [(ngModel)]="rojo">
+    </div>
+    <div>
+        <label for="verde"></label>
+        <input type="number" name="verde" id="verde" [(ngModel)]="verde">
+    </div>
+    <div>
+        <label for="azul"></label>
+        <input type="number" name="azul" id="azul" [(ngModel)]="azul">
+    </div>
+
+    <button (click)="addColor()">Agregar Color</button>
+
+    <ul class="flex flex-col">
+        @for (color of colors; track color) {
+        <li [style.background-color]="color" [style.color]="'white'" [style.padding]="'10px'" [style.margin]="'10px'"
+            [style.display]="'inline-block'">{{ color }}</li>
+        }
+    </ul>
+</div>
